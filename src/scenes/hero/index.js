@@ -1,4 +1,5 @@
 import React from 'react';
+import Btn3Col from '../../components/Btn3Col';
 
 const HeroSection = () => {
   return (
@@ -45,7 +46,12 @@ const HeroSection = () => {
                   SKILLFULLY CRAFTING
                 </p>
                 <p className="w-full text-center caveat text-5xl text-primary font-bold py-3">
-                  LIGHT &amp; BYTES
+                  Light{" "}
+                  <span className="singleChar text-white pl-1 pr-1">
+                    {" "}
+                    &amp;{" "}
+                  </span>{" "}
+                  Bytes
                 </p>
                 <p className="w-full text-right text-2xl pt-3 font-light">
                   FOR AMBITIOUS BRANDS
@@ -78,6 +84,18 @@ const HeroSection = () => {
           <div className="w-full bg-primary rounded-full aspect-square relative flex justify-center items-center">
             <img src="aj3.png" alt="AJ" className="w-3/5" />
           </div>
+          <Btn3Col
+            left="15"
+            center="+"
+            right={
+              <p className="flex flex-col text-left uppercase relative top-[-3px] p-0 m-0">
+                <span className="font-medium text-sm">Years of</span>
+                <span className="font-medium text-sm text-primary">
+                  Experience
+                </span>
+              </p>
+            }
+          />
         </div>
       </div>
     </div>

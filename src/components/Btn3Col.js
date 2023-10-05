@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const Btn3Col = ({ left, center, right }) => {
   return (
@@ -10,11 +9,4 @@ const Btn3Col = ({ left, center, right }) => {
     </div>
   );
 };
-
-Btn3Col.propTypes = {
-  left: PropTypes.string.isRequired,
-  center: PropTypes.string.isRequired,
-  right: PropTypes.string.isRequired,
-};
-
 export default Btn3Col;

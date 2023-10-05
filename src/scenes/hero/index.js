@@ -1,5 +1,6 @@
 import React from 'react';
 import Btn3Col from '../../components/Btn3Col';
+import Btn2Col from "../../components/Btn2Col";
 
 const HeroSection = () => {
   return (
@@ -47,7 +48,7 @@ const HeroSection = () => {
                 </p>
                 <p className="w-full text-center caveat text-5xl text-primary font-bold py-3">
                   Light{" "}
-                  <span className="singleChar text-white pl-1 pr-1">
+                  <span className="singleChar text-tertiary pl-1 pr-1">
                     {" "}
                     &amp;{" "}
                   </span>{" "}
@@ -56,6 +57,29 @@ const HeroSection = () => {
                 <p className="w-full text-right text-2xl pt-3 font-light">
                   FOR AMBITIOUS BRANDS
                 </p>
+              </div>
+              <div className="flex justify-center pt-[60px]">
+                <a
+                  href="https://www.linkedin.com"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <img src="linkedin.svg" alt="linkedin" className="relative w-12 px-2" />
+                </a>
+                <a
+                  href="https://www.upwork.com"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <img src="upwork.svg" alt="upwork" className="relative w-12 px-2" />
+                </a>
+                <a
+                  href="https://www.github.com"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <img src="github.svg" alt="github" className="relative w-12 px-2" />
+                </a>
               </div>
             </div>
           </div>
@@ -89,9 +113,20 @@ const HeroSection = () => {
             center="+"
             right={
               <p className="flex flex-col text-left uppercase relative top-[-3px] p-0 m-0">
-                <span className="font-medium text-sm">Years of</span>
-                <span className="font-medium text-sm text-primary">
+                <span className="font-bold text-sm">Years of</span>
+                <span className="font-bold text-sm text-primary">
                   Experience
+                </span>
+              </p>
+            }
+          />
+          <Btn2Col
+            left="100%"
+            right={
+              <p className="flex flex-col text-left uppercase relative top-[-3px] p-0 m-0">
+                <span className="font-bold text-sm">Project</span>
+                <span className="font-bold text-sm text-tertiary">
+                  Approval Rating
                 </span>
               </p>
             }

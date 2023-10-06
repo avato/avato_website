@@ -7,7 +7,7 @@ module.exports = {
         "site-bg": "#DEDDDD",
         primary: "#666465",
         secondary: "#c84d5e",
-        tertiary: "#88d0cd",
+        tertiary: "#41af9b",
         dark: "#363148",
       },
     },
